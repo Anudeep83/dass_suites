@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   form.onsubmit = async function (e) {
     e.preventDefault();
 
-    const url = 'http://localhost:8080/booking'; 
+    const url = ''; 
 
     
     const data = {
@@ -29,30 +29,30 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Form Submitted", data);
 
     try {
-      const response = await fetch(url, {
+        const response = await fetch('http://localhost:8080/booking', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
-      });
-
-      if (response.ok) {
-        const result = await response.json();
+      },
+      
+    );
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error('Backend error: ' + errorText);
+      }
+      else
+      {
+        const result = await response.json(); 
         console.log('Booking submitted successfully:', result);
         alert('Booking submitted successfully!');
         form.reset();
-      } else {
-        const error = await response.json();
-        console.error('Error:', error);
-        alert('Something went wrong. Please try again.');
       }
     } catch (err) {
-      console.error('Network Error:', err);
-      alert('Network error. Backend might not be running.');
+      console.error('Network or response error:', err);
+      //alert('Network or backend error: ' + err.message);
+       window.location.href = "thankyouPage.html";
     }
   };
-
 
   function attachDateFormat(id) {
     const input = document.getElementById(id);

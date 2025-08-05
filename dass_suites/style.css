@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background: #0a1f44;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f9c846;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #f9c846;
+}
+
+.icons i {
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #dce3ea;
+    text-align: center;
+    padding: 100px 20px 0;
+}
+
+.home .content h3 {
+    font-size: 2.5rem;
+    color: #0a1f44;
+}
+
+.home .content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #f9c846;
+    color: #0a1f44;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e8b127;
+}
+
+.book {
+    background: #fff;
+    padding: 80px 20px;
+}
+
+.book .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0a1f44;
+}
+
+.book .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.book .row .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.book form {
+    width: 100%;
+    max-width: 500px;
+    background: #f1f5f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.book form .inputBox {
+    margin-bottom: 20px;
+}
+
+.book form .inputBox h3 {
+    margin-bottom: 5px;
+    color: #0a1f44;
+    font-size: 1rem;
+}
+
+.book form .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF; /* White background */
+  color: #2D1764; /* Dark purple for text */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2D1764; /* Dark purple */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.room-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #F6F6F6; /* Light neutral background */
+  min-height: 75vh; /* 👈 This makes it 3/4th of the viewport height */
+}
+
+.room-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+
+  width: 75vw;        /* 👈 Set width to 3/4 of the viewport width */
+  max-width: none;    /* 👈 Remove the 600px limit */
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.room-card img {
+  width: 100%;
+  height: auto;             /* 👈 Let height adjust naturally */
+  object-fit: contain;      /* 👈 Show full image, no cropping */
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+
+
+
+
+.room-card-content {
+  padding: 1.5rem;
+}
+
+.room-card h3 {
+  color: #2D1764; /* Dark purple heading */
+  margin-bottom: 0.5rem;
+}
+
+.room-card p {
+  color: #555; /* Slightly muted text */
+  line-height: 1.5;
+}

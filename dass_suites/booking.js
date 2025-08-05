@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
   
-  attachDateFormat("checkin");
-  attachDateFormat("checkout");
+  attachDateFormat("checkInDate");
+  attachDateFormat("checkOutDate");
 
   const form = document.getElementById('bookingForm');
 
   form.onsubmit = async function (e) {
     e.preventDefault();
 
-    const url = 'http://localhost:5000/bookings'; 
+    const url = 'http://localhost:8080/booking'; 
 
     
     const data = {
-      firstName: document.getElementById('firstname').value.trim(),
-      lastName: document.getElementById('lastname').value.trim(),
-      phone: document.getElementById('phone').value.trim(),
+      firstName: document.getElementById('firstName').value.trim(),
+      lastName: document.getElementById('lastName').value.trim(),
+      phone: document.getElementById('phoneNumber').value.trim(),
       email: document.getElementById('email').value.trim(),
       pincode: document.getElementById('pincode').value.trim(),
       state: document.getElementById('state').value.trim(),
       city: document.getElementById('city').value.trim(),
-      checkin: document.getElementById('checkin').value.trim(),
-      checkout: document.getElementById('checkout').value.trim(),
+      checkin: document.getElementById('checkInDate').value.trim(),
+      checkout: document.getElementById('checkOutDate').value.trim(),
       guests: document.getElementById('guests').value,
-      room: document.getElementById('room').value
+      room: document.getElementById('roomType').value
     };
 
 

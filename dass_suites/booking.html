@@ -30,19 +30,19 @@
   <!-- Personal Information -->
   <div class="form-row">
     <div class="form-group">
-      <label for="firstname">First Name</label>
-      <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" required>
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstname" placeholder="Enter your firstname" required>
     </div>
     <div class="form-group">
-      <label for="lastname">Last Name</label>
-      <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname" required>
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastname" placeholder="Enter your lastname" required>
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group">
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" id="phoneNumber" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
     </div>
     <div class="form-group">
       <label for="email">Email Address</label>
@@ -71,12 +71,12 @@
   <!-- Existing Booking Details -->
   <div class="form-row">
   <div class="form-group">
-    <label for="checkin">Check-in</label>
-    <input type="text" id="checkin" name="checkin" placeholder="YYYY-MM-DD" required>
+    <label for="checkInDate">Check-in</label>
+    <input type="text" id="checkInDate" name="checkin" placeholder="YYYY-MM-DD" required>
   </div>
   <div class="form-group">
-    <label for="checkout">Check-out</label>
-    <input type="text" id="checkout" name="checkout" placeholder="YYYY-MM-DD" required>
+    <label for="checkOutDate">Check-out</label>
+    <input type="text" id="checkOutDate" name="checkout" placeholder="YYYY-MM-DD" required>
   </div>
 </div>
 
@@ -92,8 +92,8 @@
       </select>
     </div>
     <div class="form-group">
-      <label for="room">Room Type</label>
-      <select id="room" name="room" required>
+      <label for="roomType">Room Type</label>
+      <select id="roomType" name="room" required>
         <option value="" disabled selected>Select room</option>
         <option value="deluxe">Deluxe</option>
         <option value="suite">Suite</option>
